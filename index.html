@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>forma</title>
+</head>
+
+<body>
+  <form method="POST">
+    <fieldset>
+      <label>
+        User name:
+        <input type="text" name="UserName" id="name" placeholder="Vasia" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"
+          minlength="5" maxlength="20" required>
+      </label>
+      <label>
+        User Password:
+        <input type="password" name="UserPassword" id="password"
+          placeholder="&middot;&middot;&middot;&middot;&middot;&middot;" required minlength="5" maxlength="20">
+      </label>
+      <legend>
+        Log in
+      </legend>
+    </fieldset>
+    <button type="submit">
+      Login
+    </button>
+    <button type="reset">
+      Reset
+    </button>
+
+    <a href="#">Sign up</a><a href="#">Forgot password?</a>
+
+  </form>
+</body>
+
+</html>
